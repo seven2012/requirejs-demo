@@ -5,9 +5,6 @@ require.config({
 })
 
 require(['jquery'], function ($) {
-    alert("jquery is already...");
+    let $sayHi = $('<h1>Hello World</h1>')
+    $sayHi.appendTo('body')
 })
-
-let sayHi = document.createElement('p')
-sayHi.innerText = 'Hello World!'
-document.body.appendChild(sayHi)
